@@ -3,7 +3,6 @@
 
 #include "task.h"
 #include "list.h"
-#include "cpu.h"
 
 node* head = nullptr;
 int numTasks = 0;

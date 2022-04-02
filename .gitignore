@@ -11,3 +11,9 @@ rr.exe
 schedule_priority_rr.o
 schedule_priority.o
 schedule_rr.o
+.vscode/configurationCache.log
+.vscode/dryrun.log
+.vscode/settings.json
+.vscode/targets.log
+.vscode/
+.vscode
