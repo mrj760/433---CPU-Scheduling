@@ -6,7 +6,7 @@
 #include "cpu.h"
 
 node* head = nullptr;
-int id = 0;
+int numTasks = 0;
 
 // add a new task to the list of tasks, sorting by priority as added
  void add(char *name, int priority, int burst) 
@@ -16,7 +16,7 @@ int id = 0;
 	t->name = name;
 	t->priority = priority;
 	t->burst = burst;
-	t->tid = id++;
+	t->tid = numTasks++;
 
 	node* temp = head;
 
@@ -50,12 +50,21 @@ void schedule(int)
 	traverse(head);
 	int completeTime = 0;
 	node* current = head;
+	int totalWaitTime = 0;
+	int totalTurnaroundTime = 0;
 	while (current != nullptr)
 	{
 		completeTime += current->task->burst;
 		// print job wait/turnaround info in order of completion
-		printf("Task: %s, Wait-Time: %d, Turnaround-Time:%d\n", 
-			current->task->name, completeTime-current->task->burst, completeTime);
+		int waitTime = (completeTime - current->task->burst);
+		printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
+				current->task->name, waitTime, completeTime);
+			totalWaitTime += waitTime;
+			totalTurnaroundTime += completeTime;
 		current = current->next;
 	}
+
+	// Print average wait/turnaround info
+	printf("AVERAGES : [Wait Time=\"%f\", [Turnaround Time=\"%f\"]", 
+		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }

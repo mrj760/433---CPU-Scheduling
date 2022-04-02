@@ -49,7 +49,7 @@ void traverse(struct node *head) {
     temp = head;
 
     while (temp != NULL) {
-        printf("TASK %d : [name=\"%s\"] [priority=\"%d\"] [burstTime=\"%d\"]\n",temp->task->tid, temp->task->name, temp->task->priority, temp->task->burst);
+        printf("TASK %d : [name=\"%s\"] [priority=\"%d\"] [burstTime=\"%d\"]\n", temp->task->tid+1, temp->task->name, temp->task->priority, temp->task->burst);
         temp = temp->next;
     }
 }

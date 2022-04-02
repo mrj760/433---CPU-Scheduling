@@ -6,7 +6,7 @@
 #include "cpu.h"
 
 node* head = nullptr;
-int id = 0;
+int numTasks = 0;
 
 // add a new task to the list of tasks, sorting by priority as added
  void add(char *name, int priority, int burst) 
@@ -16,7 +16,7 @@ int id = 0;
 	t->name = name;
 	t->priority = priority;
 	t->burst = burst;
-	t->tid = id++;
+	t->tid = numTasks++;
 
 	node* temp = head;
 
@@ -46,54 +46,64 @@ int id = 0;
  */
 void schedule(int rr_time) 
 {
+	// printf("**[rr time=\"%d\"", rr_time); // debug
 	traverse(head);
-	int totalTime = 0;
+	int totalTimeElapsed = 0;
 	int completeCount = 0; // number of completed jobs. if ever >= total # jobs then stop rr schedule
 	node* current = head;
+
+	int totalWaitTime = 0;
+	int totalTurnaroundTime = 0;
+
 	while (true)
 	{
-		// skip completed jobs
+
+
 		if (current->task->burst == 0)
-		{
+		{ 	// skip completed jobs
 			current = current->next;
-			completeCount++;
+			// printf("\n"); // debug
 			continue;
 		}
 
-		// reached end, go back to start and start tracking completed jobs from scratch
-		if (current == nullptr)
-		{
-			if (completeCount >= id)
-			{
-				printf("All jobs done. Terminate Function");
-					return;
-			}
-			current = head;
-			completeCount = 0;
-			continue;
-		}
 
-		// subtract either the rr_time or the rest of the burst time from the task, whichever is smaller
-		int roundTime = current->task->burst < rr_time ? current->task->burst : rr_time;
-		current->task->burst -= roundTime;
+		// time to elapse this round will either be the rr_time or the rest of the current task's burst time, whichever is smaller
+		// deduct from current task's burst time and track total elapsed time
+		int roundTimeElapsed;
+		if (rr_time == 0)
+			roundTimeElapsed = current->task->burst;
+		else
+			roundTimeElapsed = current->task->burst < rr_time ? current->task->burst : rr_time;
+		current->task->burst -= roundTimeElapsed;
+		totalTimeElapsed += roundTimeElapsed;
 
-		// Track how much total time has been taken
-		totalTime += roundTime;
+		
 
-		// Debug print
-		printf("Current task: %s, Round Time: %d, Total Time: %d, Task Time Remaining: %d, Jobs Complete: %d\n", 
-			current->task->name, roundTime, totalTime, current->task->burst, completeCount);
-
-		// task just finished, print out its wait/turnaround info
 		if (current->task->burst == 0)
-		{
-			// print job wait/turnaround info in order of completion
-			printf("Task: %s, Wait-Time: %d, Turnaround-Time:%d\n", 
-				current->task->name, totalTime - totalTime-current->task->burst, totalTime);
-			completeCount++;
+		{ 	// Task just finished
+			// Print task-specific wait/turnaround info in order of completion
+			int waitTime = (totalTimeElapsed - current->task->burst);
+			printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
+				current->task->name, waitTime, totalTimeElapsed);
+			totalWaitTime += waitTime;
+			totalTurnaroundTime += totalTimeElapsed;
+			if (++completeCount >= numTasks)
+				break;
 		}
 
-		// move on
-		current = current->next;
+		
+		if (current->next == nullptr)
+		{ 	// Reached end. Start over and reset job completion count
+			current = head;
+			continue;
+		}
+		else 
+		{ 	// Move on
+			current = current->next;
+		}
 	}
+	
+	// Print average wait/turnaround info
+	printf("AVERAGES : [Wait Time=\"%f\", [Turnaround Time=\"%f\"]", 
+		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }
