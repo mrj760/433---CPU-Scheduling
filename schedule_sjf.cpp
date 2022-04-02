@@ -57,7 +57,7 @@ void schedule(int)
 		completeTime += current->task->burst;
 		// print job wait/turnaround info in order of completion
 		int waitTime = (completeTime - current->task->burst);
-		printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
+		printf("TASK COMPLETED : [task=\"%s\"], [wait-time=\"%d\"], [turnaround-time=\"%d\"]\n",  
 				current->task->name, waitTime, completeTime);
 		totalWaitTime += waitTime;
 		totalTurnaroundTime += completeTime;
@@ -65,6 +65,6 @@ void schedule(int)
 	}
 
 	// Print average wait/turnaround info
-	printf("AVERAGES : [Wait Time=\"%f\", [Turnaround Time=\"%f\"]", 
+	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]",
 		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }

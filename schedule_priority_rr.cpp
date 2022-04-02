@@ -83,7 +83,7 @@ void schedule(int rr_time)
 		{ 	// Task just finished
 			// Print task-specific wait/turnaround info in order of completion
 			int waitTime = (totalTimeElapsed - roundTimeElapsed - current->task->burst);
-			printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
+			printf("TASK COMPLETED : [task=\"%s\"], [wait-time=\"%d\"], [turnaround-time=\"%d\"]\n",  
 				current->task->name, waitTime, totalTimeElapsed);
 			totalWaitTime += waitTime;
 			totalTurnaroundTime += totalTimeElapsed;
@@ -104,6 +104,6 @@ void schedule(int rr_time)
 	}
 	
 	// Print average wait/turnaround info
-	printf("AVERAGES : [Wait-Time=\"%f\", [Turnaround-Time=\"%f\"]", 
+	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]",
 		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }
