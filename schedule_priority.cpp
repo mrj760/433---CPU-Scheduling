@@ -59,8 +59,8 @@ void schedule(int)
 		int waitTime = (completeTime - current->task->burst);
 		printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
 				current->task->name, waitTime, completeTime);
-			totalWaitTime += waitTime;
-			totalTurnaroundTime += completeTime;
+		totalWaitTime += waitTime;
+		totalTurnaroundTime += completeTime;
 		current = current->next;
 	}
 
