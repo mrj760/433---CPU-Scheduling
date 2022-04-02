@@ -82,7 +82,7 @@ void schedule(int rr_time)
 		if (current->task->burst == 0)
 		{ 	// Task just finished
 			// Print task-specific wait/turnaround info in order of completion
-			int waitTime = (totalTimeElapsed - current->task->burst);
+			int waitTime = (totalTimeElapsed - roundTimeElapsed - current->task->burst);
 			printf("TASK COMPLETED : [Task=\"%s\"], [Wait-Time=\"%d\"], [Turnaround-Time=\"%d\"]\n", 
 				current->task->name, waitTime, totalTimeElapsed);
 			totalWaitTime += waitTime;
