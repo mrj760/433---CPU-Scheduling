@@ -1,0 +1,13 @@
+CPU.o
+driver.o
+fcfs.exe
+list.o
+schedule_fcfs.o
+schedule_sjf.o
+sjf.exe
+priority_rr.exe
+priority.exe
+rr.exe
+schedule_priority_rr.o
+schedule_priority.o
+schedule_rr.o
