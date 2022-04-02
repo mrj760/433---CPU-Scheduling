@@ -25,8 +25,8 @@ int numTasks = 0;
 	{
 		insert(&head, t);
 	}
-	// else insert it after all other tasks of the same priority but before the task with the next least priority
-	// or insert it at the end if it has the least priority of all existing tasks
+	// else insert it after all other tasks of the same burst length but before the task with the next least burst length
+	// or insert it at the end if it has the longest burst time of all existing tasks
 	else while (true)
 	{
 		if (temp->next == nullptr || t->burst < temp->next->task->burst)

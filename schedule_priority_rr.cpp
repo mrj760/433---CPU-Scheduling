@@ -46,7 +46,6 @@ int numTasks = 0;
  */
 void schedule(int rr_time) 
 {
-	// printf("**[rr time=\"%d\"", rr_time); // debug
 	traverse(head);
 	int totalTimeElapsed = 0;
 	int completeCount = 0; // number of completed jobs. if ever >= total # jobs then stop rr schedule

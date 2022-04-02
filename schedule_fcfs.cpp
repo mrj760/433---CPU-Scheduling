@@ -18,6 +18,7 @@ void add(char *name, int priority, int burst)
 	t->priority = priority;
 	t->tid = numTasks++;
 
+	// special case: adding first node (head)
 	if (head == nullptr){
 		struct node *newNode = (struct node *) malloc(sizeof(struct node));
 		newNode->task = t;
@@ -26,6 +27,7 @@ void add(char *name, int priority, int burst)
 		return;
 	}
 
+	// add new node to end of list
 	node* current = head;
 	while (true)
 	{
