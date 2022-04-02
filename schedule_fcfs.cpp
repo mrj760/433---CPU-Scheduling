@@ -11,7 +11,6 @@ int numTasks = 0;
 // add a new task to the list of tasks
 void add(char *name, int priority, int burst) 
 {
-	traverse(head);
 	// Allocate a task to add to the task list
 	task* t = (struct task *) malloc(sizeof(struct task));
 	t->name = name;
