@@ -13,7 +13,9 @@ int numTasks = 0;
 {
 	// Allocate a task to add to the task list
 	task* t = (struct task *) malloc(sizeof(struct task));
+	t->name = name;
 	t->priority = priority;
+	t->burst = burst;
 	t->tid = numTasks++;
 
 	node* current = head;
