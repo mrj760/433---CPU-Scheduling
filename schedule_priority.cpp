@@ -13,12 +13,10 @@ int numTasks = 0;
 {
 	// Allocate a task to add to the task list
 	task* t = (struct task *) malloc(sizeof(struct task));
-	t->name = name;
 	t->priority = priority;
-	t->burst = burst;
 	t->tid = numTasks++;
 
-	node* temp = head;
+	node* current = head;
 
 	// insert the task at the front of the list if it has the most priority
 	if (head == nullptr || t->priority < head->task->priority)
@@ -29,15 +27,15 @@ int numTasks = 0;
 	// or insert it at the end if it has the least priority of all existing tasks
 	else while (true)
 	{
-		if (temp->next == nullptr || t->priority < temp->next->task->priority)
+		if (current->next == nullptr || t->priority < current->next->task->priority)
 		{
 			struct node *newNode = (struct node *) malloc(sizeof(struct node));
 			newNode->task = t;
-			newNode->next = temp->next;
-			temp->next = newNode;
+			newNode->next = current->next;
+			current->next = newNode;
 			break;
 		}
-		temp = temp->next;
+		current = current->next;
 	}
 }
 

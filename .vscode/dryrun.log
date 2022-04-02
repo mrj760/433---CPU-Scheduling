@@ -13,6 +13,7 @@ g++			 -c -g -Wall 		 schedule_priority.cpp -o schedule_priority.o
 g++			 -o priority driver.o schedule_priority.o list.o CPU.o -L.			 -lm			
 g++			 -c -g -Wall 		 schedule_priority_rr.cpp -o schedule_priority_rr.o
 g++			 -o priority_rr driver.o schedule_priority_rr.o list.o CPU.o -L.			 -lm			
+ 
 rm -f ./.depend
 g++			 -g -Wall 		 -MM driver.cpp schedule_fcfs.cpp schedule_rr.cpp schedule_sjf.cpp schedule_priority.cpp schedule_priority_rr.cpp list.cpp CPU.cpp > ./.depend;
 make.exe: Leaving directory `f:/no delete/OP_SYS (433)/assign3'

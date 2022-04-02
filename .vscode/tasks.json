@@ -13,7 +13,7 @@
                 "CPU.cpp",
                 "driver.cpp",
                 "list.cpp",
-                "schedule_priority.cpp"
+                "schedule_fcfs.cpp"
             ],
             "group": {
                 "kind": "build",

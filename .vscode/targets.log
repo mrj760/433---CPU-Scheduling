@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Sat Apr 02 02:33:19 2022
+# Make data base, printed on Sat Apr 02 03:55:00 2022
 
 # Variables
 
@@ -62,7 +62,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-09d68243-2c2f-4bab-807b-d9c2db45f447-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-710dd0d6-d109-4ab7-96ce-bd3a81480a8c-sock
 # environment
 VSCODE_CWD = C:\Users\TakeA\AppData\Local\Programs\Microsoft VS Code\_
 # environment
@@ -93,7 +93,7 @@ LIB = -lm
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13488_SYUAGVETIIZCLBNX
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2208_LXTMIWWCLDHANMBC
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -121,7 +121,8 @@ LOGONSERVER = \\MJS-PC
 # environment
 ONEDRIVECONSUMER = C:\Users\TakeA\OneDrive
 # environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+VSCODE_HANDLES_UNCA 
+UGHT_ERRORS = true
 # environment
 USERDOMAIN = MJS-PC
 # default
@@ -140,8 +141,7 @@ MAKE_VERSION := 3.81
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environm 
-ent
+# environment
 LOCALAPPDATA = C:\Users\TakeA\AppData\Local
 # environment
 PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
@@ -182,8 +182,8 @@ TEMP = C:\Users\TakeA\AppData\Local\Temp
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
 # default
-MAKEFILES  
-:= 
+MAKEFILES : 
+= 
 # automatic
 <F = $(notdir $<)
 # environment
@@ -207,11 +207,12 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 13488
+VSCODE_PID = 2208
 # environment
 USERDOMAIN_ROAMINGPROFILE = MJS-PC
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=10/124=8%
+# Load=97/1024=9%, Rehash=0, 
+ Collisions=10/124=8%
 
 # Pattern-specific Variable Values
 
@@ -222,30 +223,29 @@ USERDOMAIN_ROAMINGPROFILE = MJS-PC
 # C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1647403751): 6 files, no impossibilities.
 # T:\Java\jdk: could not be stat'd.
 # C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin (key C:/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin, mtime 1639644035): 127 files, no impossibilities.
-# C:\WINDOWS\System32\WindowsPowerShel 
-l\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1646686296): 32 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1646686296): 32 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1646687069): 182 files, no impossibilities.
-# . (key f:/no delete/OP_SYS (433)/assign3, mtime 1648874331): 41 files, no impossibilities.
+# . (key f:/no delete/OP_SYS (433)/assign3, mtime 1648896706): 41 files, no impossibilities.
 # C:\Users\TakeA\AppData\Local\Microsoft\WindowsApps (key C:/Users/TakeA/AppData/Local/Microsoft/WindowsApps, mtime 1648858707): 37 files, no impossibilities.
-# C:\Program Files (x86)\NVIDIA Corporation\P 
-hysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1646694713): 10 files, no impossibilities.
+# C:\Program Files (x86)\NVIDIA Corporation\Phy 
+sX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1646694713): 10 files, no impossibilities.
 # D:\Coding\MinGW\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin (key D:/Coding/MinGW/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin, mtime 1639564871): 58 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1639645653): 12 files, no impossibilities.
 # C:\Users\TakeA\AppData\Local\GitHubDesktop\bin (key C:/Users/TakeA/AppData/Local/GitHubDesktop/bin, mtime 1640855898): 4 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32 (key C:/Program Files (x86)/GnuWin32, mtime 1648766160): 10 files, no impossibilities.
 # C:\Users\TakeA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts (key C:/Users/TakeA/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0/LocalCache/local-packages/Python310/Scripts, mtime 1647570374): 9 files, no impossibilities.
-# 
- C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C 
+:\WINDOWS\System32\OpenSSH\: could not be stat'd.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1643320474): 12 files, no impossibilities.
 # C:\WINDOWS (key C:/WINDOWS, mtime 1648508323): 118 files, no impossibilities.
-# C:\Users\TakeA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages (key C:/Users/TakeA/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0/LocalCache/local-packages/Python310/site 
--packages, mtime 1647570373): 15 files, no impossibilities.
+# C:\Users\TakeA\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages (key C:/Users/TakeA/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0/LocalCache/local-packages/Python310/site-packages, mtime 1647570373): 15 files, no impossibilities.
 # D:\Program Files\Git\cmd (key D:/Program Files/Git/cmd, mtime 1640157633): 8 files, no impossibilities.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1648774182): 3078 files, no impossibilities.
 # C:\Users\TakeA\AppData\Local\Programs\Microsoft VS Code\bin: could not be stat'd.
 # T:\Java\bin (key T:/Java/bin, mtime 1647403704): 123 files, no impossibilities.
 # C:\Users\TakeA\.dotnet\tools: could not be stat'd.
-# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1646694244): 5 files, no impossibilities.
+# C:\Program Files\NVIDIA Corp 
+oration\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1646694244): 5 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1648766160): 5 files, no impossibilities.
 
 # 3892 files, no impossibilities in 24 directories.
@@ -262,8 +262,8 @@ schedule_sjf.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a 
- target:
+# Not a t 
+arget:
 schedule_priority_rr.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -281,8 +281,7 @@ all: sjf fcfs rr priority priority_rr depend
 # Not a target:
 driver.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-01 21 
-:27:58
+#  Last modified 2022-04-01 21:27:58
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -300,7 +299,8 @@ schedule_priority.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-.depend: driver.cpp schedule_fcfs.cpp schedule_rr.cpp schedule_sjf.cpp schedule_priority.cpp schedule_priority_rr.cpp list.cpp CPU.cpp
+.depend: driver.cpp schedule_fcfs.cpp schedule_rr.cpp schedule_sjf.cpp schedule_priority.cpp  
+schedule_priority_rr.cpp list.cpp CPU.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -319,8 +319,8 @@ CPU.cpp:
 list.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has 
- not been updated.
+#  File has n 
+ot been updated.
 
 # Not a target:
 makefile:
@@ -339,8 +339,7 @@ schedule_fcfs.cpp:
 
 priority_rr: driver.o schedule_priority_rr.o list.o CPU.o
 #  Implicit rule search has not been done.
-#  Modification 
- time never checked.
+#  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 29):
 	$(CC) -o priority_rr driver.o schedule_priority_rr.o list.o CPU.o $(LDFLAGS) $(LIB)
@@ -358,7 +357,8 @@ schedule_sjf.o:
 # Not a target:
 schedule_rr.cpp:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Modifica 
+tion time never checked.
 #  File has not been updated.
 
 # Not a target:
@@ -391,8 +391,7 @@ priority: driver.o schedule_priority.o list.o CPU.o
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 26):
-	$(CC) -o priority driver.o schedule_priority.o list.o CPU.o $(LDFLAGS) 
- $(LIB)
+	$(CC) -o priority driver.o schedule_priority.o list.o CPU.o $(LDFLAGS) $(LIB)
 	
 
 .cpp.o:
@@ -414,8 +413,8 @@ clean:
 # Not a target:
 schedule_priority.o:
 #  Implicit rule search has not been done.
-#  Modification tim 
-e never checked.
+#  Modification time  
+never checked.
 #  File has not been updated.
 
 # Not a target:
@@ -435,8 +434,8 @@ driver.cpp:
 
 sjf: driver.o schedule_sjf.o list.o CPU.o
 #  Implicit rule search has not been done.
-#  Implicit/s 
-tatic pattern stem: `'
+#  Implicit/sta 
+tic pattern stem: `'
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
@@ -458,14 +457,15 @@ tatic pattern stem: `'
 # ? := driver.o schedule_sjf.o list.o CPU.o
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/13=8%
-#  commands to execute (from `makefile', line 23):
+#  commands to execute (from `makefile', line 2 
+3):
 	$(CC) -o sjf driver.o schedule_sjf.o list.o CPU.o $(LDFLAGS) $(LIB)
 	
 
 # Not a target:
 list.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-01 21:38:51
+#  Last modified 2022-04-02 03:33:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -478,8 +478,7 @@ schedule_fcfs.o:
 #  File has not been updated.
 
 fcfs: driver.o schedule_fcfs.o list.o CPU.o
-#  Implicit rule s 
-earch has not been done.
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 17):
@@ -498,14 +497,14 @@ schedule_rr.o:
 
 # No `vpath' search paths.
 
-# No general (`VPATH' variable) 
- search path.
+# No general (`VPATH' variable) s 
+earch path.
 
 # # of strings in strcache: 1
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Apr 02 02:33:19 2022
+# Finished Make data base on Sat Apr 02 03:55:00 2022
 
  
