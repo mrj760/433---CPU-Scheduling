@@ -64,7 +64,10 @@ void schedule(int rr_time)
 		if (current == nullptr)
 		{
 			if (completeCount >= id)
-				break;
+			{
+				printf("All jobs done. Terminate Function");
+					return;
+			}
 			current = head;
 			completeCount = 0;
 			continue;
