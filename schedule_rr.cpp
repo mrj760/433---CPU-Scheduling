@@ -14,7 +14,7 @@
 /**
  *  * Run the RR scheduler
  *   */
-void schedule() 
+void schedule(int rr_time) 
 {
 	// TODO: add your implementation here
 }

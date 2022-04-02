@@ -14,7 +14,7 @@
 /**
  *  * Run the FCFS scheduler
  *   */
-void schedule() 
+void schedule(int) 
 {
 	// TODO: add your implementation here
 }
