@@ -1,4 +1,4 @@
--g 
+-O 
 -Wall 
 -MM 
 driver.cpp 
@@ -8,4 +8,3 @@ schedule_sjf.cpp
 schedule_priority.cpp 
 schedule_priority_rr.cpp 
 list.cpp 
-CPU.cpp 

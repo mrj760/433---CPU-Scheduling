@@ -45,6 +45,9 @@ int numTasks = 0;
  */
 void schedule(int rr_time) 
 {
+	if (rr_time == 0)
+		printf("No Quantum specified. Scheduler will run as normal priority...\n");
+
 	traverse(head);
 	int totalTimeElapsed = 0;
 	int completeCount = 0; // number of completed jobs. if ever >= total # jobs then stop rr schedule
@@ -102,6 +105,6 @@ void schedule(int rr_time)
 	}
 	
 	// Print average wait/turnaround info
-	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]",
+	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]\n",
 		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }

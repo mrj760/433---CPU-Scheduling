@@ -67,6 +67,6 @@ void schedule(int rr_time)
 	}
 
 	// Print average wait/turnaround info
-	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]",
+	printf("AVERAGES : [wait-time=\"%f\"], [turnaround-time=\"%f\"]\n",
 		1.0*totalWaitTime/numTasks, 1.0*totalTurnaroundTime/numTasks);
 }

@@ -37,7 +37,7 @@ depend: .depend
 	rm -f ./.depend
 	$(CC) $(CFLAGS) -MM $^ > ./.depend;
 
-include .depend
+# include .depend
 
 # cleanup
 clean:
