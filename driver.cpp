@@ -39,6 +39,7 @@ char *strsep(char **stringp, const char *delim)
 
 int main(int argc, char *argv[])
 {
+  std::cout << "=================================" << std::endl;
   std::cout << "CS 433 Programming assignment 3" << std::endl;
   std::cout << "Author: Christian Contreras, Micah Johnson, and Eric Tyler" << std::endl;
   std::cout << "Date: 03/31/2022" << std::endl;

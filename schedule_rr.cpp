@@ -48,6 +48,9 @@ int numTasks = 0;
  *   */
 void schedule(int rr_time) 
 {
+	if (rr_time == 0)
+		printf("No Quantum specified. Scheduler will run as normal First Come First Serve...\n");
+	
 	// perform each task until completion in the priority order made when adding them to the list
 	traverse(head);
 	int completeTime = 0;
